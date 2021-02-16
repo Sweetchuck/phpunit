@@ -729,7 +729,7 @@ abstract class TestCase extends Assert implements Reorderable, SelfDescribing, T
         clearstatcache();
         $currentWorkingDirectory = getcwd();
 
-        $hookMethods = TestUtil::getHookMethods(static::class);
+        $hookMethods = TestUtil::hookMethods(static::class);
 
         $hasMetRequirements = false;
 
